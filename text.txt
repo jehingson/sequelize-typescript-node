@@ -1,0 +1,19 @@
+// Empezar a configurar el sequelize
+npx sequelize-cli init
+
+// Esto me crea 4 carpetas, que son config, migrations, models, seeders
+
+// Luego debemos configurar, donde guardamos esas carpetas a menos que las dejemos donde fueron descargadas 
+
+//Podemos leer al respecto en sequelize-Migrations-The .sequelizerc file
+
+//Ahora si ejecutamos => db:migrate de la siguiente forma
+npx sequelize-cli db:migrate
+
+// de aqui verificamos la conexion con la base de datos a la cual queremos sincronizar 
+en la base de datos se crea una nueva carpeta que sera llama sequelizemeta y sera donde se guarden los nombres de las migraciones ejecutadas
+
+// Para crear los models desde la consola
+
+npx sequelize-cli model:generate --name User --attributes name:string,age:integer
+
